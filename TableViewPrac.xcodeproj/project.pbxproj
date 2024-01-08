@@ -63,14 +63,22 @@
 				00251BE82B483531000183D5 /* AppDelegate.swift */,
 				00251BEA2B483531000183D5 /* SceneDelegate.swift */,
 				00251BFC2B483BE6000183D5 /* SettingsTableViewController.swift */,
-				00251BFE2B483FBE000183D5 /* ShoppingTableViewController.swift */,
-				00251C002B484332000183D5 /* ShoppingTableViewCell.swift */,
+				00A649172B4BE5BA00E25389 /* Shopping */,
 				00251BEE2B483531000183D5 /* Main.storyboard */,
 				00251BF12B483532000183D5 /* Assets.xcassets */,
 				00251BF32B483532000183D5 /* LaunchScreen.storyboard */,
 				00251BF62B483532000183D5 /* Info.plist */,
 			);
 			path = TableViewPrac;
+			sourceTree = "<group>";
+		};
+		00A649172B4BE5BA00E25389 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				00251BFE2B483FBE000183D5 /* ShoppingTableViewController.swift */,
+				00251C002B484332000183D5 /* ShoppingTableViewCell.swift */,
+			);
+			path = Shopping;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
