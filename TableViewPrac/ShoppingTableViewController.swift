@@ -15,9 +15,6 @@ final class ShoppingTableViewController: UITableViewController {
     
     var shoppingList = ["그립톡 구매하기", "사이다 구매", "아이패드 케이스 최저가 알아보기", "양말"]
     
-    let randomCheckmarkImage = ["checkmark.square", "checkmark.square.fill"]
-    let randomStarImage = ["star", "star.fill"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,18 +48,9 @@ final class ShoppingTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShoppingTableViewCell", for: indexPath) as! ShoppingTableViewCell
         
-        cell.cellElementsContainerView.backgroundColor = .systemGray6
-        cell.cellElementsContainerView.layer.cornerRadius = 10
-        
-        let checkmarkButtonImage = UIImage(systemName: randomCheckmarkImage.randomElement()!)
-        cell.checkmarkButton.setImage(checkmarkButtonImage, for: .normal)
-        cell.checkmarkButton.imageView?.contentMode = .scaleAspectFit
+        cell.configureUI()
         
         cell.shoppingListItemLabel.text = shoppingList[indexPath.row]
-        
-        let starButtonImage = UIImage(systemName: randomStarImage.randomElement()!)
-        cell.starButton.setImage(starButtonImage, for: .normal)
-        cell.starButton.imageView?.contentMode = .scaleAspectFit
                 
         return cell
     }
