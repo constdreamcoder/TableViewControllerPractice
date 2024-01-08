@@ -24,9 +24,7 @@ final class ShoppingTableViewController: UITableViewController {
     private func configureUI() {
         navigationItem.title = "쇼핑"
         view.backgroundColor = .white
-        
-        tableView.separatorStyle = .none
-        
+                
         addContainerView.backgroundColor = .systemGray6
         addContainerView.layer.cornerRadius = 10
         
